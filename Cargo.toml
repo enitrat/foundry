@@ -28,7 +28,7 @@ resolver = "2"
 [workspace.package]
 version = "0.2.0"
 edition = "2021"
-rust-version = "1.74" # Remember to update clippy.toml as well
+rust-version = "1.74"                                       # Remember to update clippy.toml as well
 authors = ["Foundry Contributors"]
 license = "MIT OR Apache-2.0"
 homepage = "https://github.com/foundry-rs/foundry"
@@ -153,7 +153,10 @@ alloy-rlp = "0.3.3"
 solang-parser = "=0.3.3"
 
 ## misc
-chrono = { version = "0.4", default-features = false, features = ["clock", "std"] }
+chrono = { version = "0.4", default-features = false, features = [
+    "clock",
+    "std",
+] }
 color-eyre = "0.6"
 derive_more = "0.99"
 eyre = "0.6"
@@ -196,8 +199,7 @@ ethers-signers = { git = "https://github.com/clabby/ethers-rs", branch = "cl/cal
 ethers-middleware = { git = "https://github.com/clabby/ethers-rs", branch = "cl/call-type-3074" }
 ethers-solc = { git = "https://github.com/clabby/ethers-rs", branch = "cl/call-type-3074" }
 
-revm = { git = "https://github.com/clabby/revm", branch = "cl/eip-3074" }
-revm-interpreter = { git = "https://github.com/clabby/revm", branch = "cl/eip-3074" }
-revm-precompile = { git = "https://github.com/clabby/revm", branch = "cl/eip-3074" }
-revm-primitives = { git = "https://github.com/clabby/revm", branch = "cl/eip-3074" }
-
+revm = { git = "https://github.com/enitrat/revm", branch = "cl/eip-3074" }
+revm-interpreter = { git = "https://github.com/enitrat/revm", branch = "cl/eip-3074" }
+revm-precompile = { git = "https://github.com/enitrat/revm", branch = "cl/eip-3074" }
+revm-primitives = { git = "https://github.com/enitrat/revm", branch = "cl/eip-3074" }
